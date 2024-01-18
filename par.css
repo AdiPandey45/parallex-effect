@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+body::-webkit-scrollbar{
+    
+    display: none;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.wrapper{
+    
+    perspective: 15px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    transform-style: preserve-3d    ;
+    z-index: -1;
+}
+.background{
+    perspective: 12px;
+    transform:  translateZ(-70px) scale(7) ;
+}
+.foreground{
+    perspective: 12px;
+    transform: translateZ(-40px) scale(5);
+}
+h1{
+    
+    font-size: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    padding: 190px;
+    color: rgb(247, 249, 250);
+    text-shadow: 3px 3px 5px rgb(249, 245, 245);
+}
+
+.background , .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:100;
+    background-size: cover;
+    
+}
+section{
+background-color: black;
+color: aliceblue;
+padding: 30px;
+overflow-y: hidden;
+
+}
+.secHeading{
+    padding: 10px;
+    font-size: 5rem;
+    left: 140px;
+    position: relative;
+}
+.text{
+    font-size: 1.5rem;
+    margin: 5rem 0;
+    padding: 0 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.hello{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    
+    background-position: center;
+    background-size: cover;
+}
+.special{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    color: rgba(26, 25, 25, 0.948);
+    background-color: rgba(240, 248, 255, 0.09);
+    font-size: 3rem;
+   
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
